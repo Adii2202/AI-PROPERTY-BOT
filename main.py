@@ -23,13 +23,16 @@ researcher = Agent(
 
 task1 = Task(
     description="Conduct research to find 5 financially promising real estate investment suburbs in Mumbai, India. Provide key financial metrics such as average property prices, rental yields, price-to-rent ratios, and any economic indicators relevant to investment decisions.",
-    expected_output="""A detailed financial report of each suburb. The results should include:
-    - Suburb Name
-    - Mean Property Price
-    - Rental Yield
-    - Price-to-Rent Ratio
-    - Economic Indicators (e.g., GDP growth, unemployment rate)
-    - Background Information: These suburbs are typically located near major transport hubs, employment centers, and educational institutions. The following list highlights some of the top contenders for investment opportunities.""",
+    expected_output="""A detailed financial report of each suburb. The results should be formatted like this:
+    
+    Suburb Name: Mumbai
+    Mean Property Price: $1 million
+    Rental Yield: 3.5%
+    Price-to-Rent Ratio: 28.57
+    Economic Indicators:
+    - GDP Growth: 7.5%
+    - Unemployment Rate: 4.2%
+    Background Information: These suburbs are typically located near major transport hubs, employment centers, and educational institutions. The following list highlights some of the top contenders for investment opportunities.""",
     agent=researcher,
     output_file="task1_output.txt"
 )
