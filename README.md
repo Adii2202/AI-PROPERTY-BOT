@@ -31,6 +31,7 @@
 2. **Run the Financial Expert Bot**:
     ```bash
     ollama run openhermes
+    ollama serve
     ```
 
 ## Additional Resources
